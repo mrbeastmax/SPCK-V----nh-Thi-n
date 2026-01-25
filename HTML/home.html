@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftDo - Dashboard</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="dashboard-container">
+        <aside class="sidebar">
+            <div class="sidebar-header">
+                <h1 class="logo">SwiftDo</h1>
+            </div>
+
+            <div class="user-section">
+                <div class="user-avatar">
+                    <span id="user-initial">U</span>
+                </div>
+                <div class="user-info">
+                    <p class="welcome-text">Welcome back,</p>
+                    <h2 id="user-display-name" class="user-name">Guest</h2>
+                </div>
+            </div>
+
+            <nav class="sidebar-nav">
+                <ul>
+                    <li class="active"><a href="#"><i class="fas fa-inbox"></i> Inbox</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-day"></i> Today</a></li>
+                    <li><a href="#"><i class="fas fa-calendar-alt"></i> Upcoming</a></li>
+                    <li class="nav-divider"></li>
+                    <li><a href="#"><i class="fas fa-check-circle"></i> Completed</a></li>
+                </ul>
+            </nav>
+
+            <button id="logoutBtn" class="btn-logout">
+                <i class="fas fa-sign-out-alt"></i> Logout
+            </button>
+        </aside>
+
+        <main class="main-content">
+            <header class="content-header">
+                <h2 id="current-category">My Tasks</h2>
+                <span id="current-date">Sunday, Jan 25</span>
+            </header>
+
+            <div class="task-input-card">
+                <input type="text" id="taskInput" placeholder="What needs to be done?">
+                <button id="addTaskBtn" class="btn-add">Add Task</button>
+            </div>
+
+            <div class="task-list-container">
+                <ul id="taskList">
+                    </ul>
+            </div>
+        </main>
+    </div>
+
+    <script src="auth.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>

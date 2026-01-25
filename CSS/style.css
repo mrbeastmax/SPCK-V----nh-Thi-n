@@ -129,3 +129,130 @@ footer {
     width: 100%;
     max-width: 400px;
 }
+/* Toàn bộ CSS cơ bản đã có từ trước, thêm phần này vào bên dưới */
+
+.dashboard-container {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: #121212;
+}
+
+/* SIDEBAR STYLES (20%) */
+.sidebar {
+    width: 280px;
+    background-color: #1e1e1e;
+    border-right: 1px solid #333;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+}
+
+.logo {
+    color: #bb86fc;
+    font-size: 24px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+/* User Section (Code đã viết ở lượt trước) */
+.user-section {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    background-color: #2c2c2c;
+    border-radius: 12px;
+    margin-bottom: 25px;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #bb86fc;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 12px;
+    color: #121212;
+    font-weight: bold;
+}
+
+/* Nav Links */
+.sidebar-nav ul { list-style: none; }
+.sidebar-nav li { margin-bottom: 5px; }
+.sidebar-nav a {
+    color: #757575;
+    text-decoration: none;
+    padding: 12px 15px;
+    display: block;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.sidebar-nav li.active a, .sidebar-nav a:hover {
+    background-color: #2c2c2c;
+    color: #bb86fc;
+}
+
+.sidebar-nav i { margin-right: 10px; width: 20px; }
+.nav-divider { height: 1px; background: #333; margin: 15px 0; }
+
+.btn-logout {
+    margin-top: auto;
+    background: none;
+    border: 1px solid #cf6679;
+    color: #cf6679;
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-logout:hover { background: #cf6679; color: #fff; }
+
+/* MAIN CONTENT (80%) */
+.main-content {
+    flex: 1;
+    padding: 40px;
+    overflow-y: auto;
+}
+
+.content-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    margin-bottom: 30px;
+}
+
+.content-header h2 { font-size: 32px; color: #e1e1e1; }
+.content-header span { color: #757575; }
+
+.task-input-card {
+    background-color: #1e1e1e;
+    padding: 15px;
+    border-radius: 12px;
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.task-input-card input {
+    flex: 1;
+    background: #2c2c2c;
+    border: 1px solid #333;
+    padding: 12px;
+    border-radius: 8px;
+    color: #fff;
+    outline: none;
+}
+
+.btn-add {
+    background-color: #bb86fc;
+    color: #121212;
+    border: none;
+    padding: 0 25px;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
