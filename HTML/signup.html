@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftDo - Create Account</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+</head>
+<body>
+    <div class="signup-card">
+        <form class="signup-form" id="signupForm">
+            <header>
+                <h1>Create Account</h1>
+                <p>Join SwiftDo to start organizing your life.</p>
+            </header>
+
+            <div class="input-field">
+                <label for="username">Full Name</label>
+                <input type="text" id="username" placeholder="Enter your full name" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" placeholder="name@example.com" required>
+            </div>
+            
+            <div class="input-field">
+                <label for="password">Password</label>
+                <input type="password" id="password" placeholder="Create a password" required>
+            </div>
+
+            <div class="input-field">
+                <label for="confirm-password">Confirm Password</label>
+                <input type="password" id="confirm-password" placeholder="Repeat your password" required>
+            </div>
+            
+            <button type="submit" class="btn-primary">Sign Up</button>
+            
+            <footer>
+                <p class="login-text">Already have an account? <a href="login.html">Login here</a></p>
+            </footer>
+        </form>
+    </div>
+    <script src="/JS/auth.js"></script>
+</body>
+</html>
