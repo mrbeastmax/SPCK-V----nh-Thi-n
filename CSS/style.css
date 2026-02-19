@@ -1,4 +1,3 @@
-/* RESET DEFAULT STYLES */
 * {
     margin: 0;
     padding: 0;
@@ -6,44 +5,44 @@
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-/* BODY BACKGROUND */
 body {
-    background-color: #121212; /* Dark background */
+    background-color: #ff0000; /* Nền đỏ tươi rực rỡ */
     display: flex;
     justify-content: center;
     align-items: center;
     height: 100vh;
-    color: #e1e1e1; /* Main text color */
+    color: #333;
 }
 
-/* LOGIN BOX CONTAINER */
 .login-card {
-    background-color: #1e1e1e; /* Card background */
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    border-bottom: 4px solid #ffcc00;
 }
 
-/* HEADER STYLE */
 header {
     text-align: center;
     margin-bottom: 30px;
 }
 
 header h1 {
-    color: #bb86fc; /* Accent Purple */
-    font-size: 24px;
+    color: #ff0000;
+    font-size: 26px;
     margin-bottom: 10px;
+    text-shadow: 1px 1px 0px #ffcc00;
+    font-weight: 800;
 }
 
 header p {
-    color: #757575; /* Muted text */
+    color: #ff8c00;
     font-size: 14px;
+    font-weight: 600;
 }
 
-/* INPUT FIELD STYLE */
 .input-field {
     margin-bottom: 20px;
 }
@@ -52,32 +51,32 @@ header p {
     display: block;
     margin-bottom: 8px;
     font-size: 14px;
-    color: #e1e1e1;
+    color: #ff0000;
+    font-weight: bold;
 }
 
 .input-field input {
     width: 100%;
     padding: 12px 15px;
     border-radius: 8px;
-    border: 1px solid #333333;
-    background-color: #2c2c2c; /* Input background */
-    color: #ffffff;
+    border: 1px solid #ffcc00;
+    background-color: #fffdf5;
+    color: #333;
     outline: none;
 }
 
-/* INPUT FOCUS EFFECT */
 .input-field input:focus {
-    border-color: #bb86fc; /* Change border to purple when clicked */
+    border-color: #ff0000;
+    box-shadow: 0 0 5px rgba(255, 0, 0, 0.2);
 }
 
-/* LOGIN BUTTON */
 .btn-primary {
     width: 100%;
     padding: 12px;
-    background-color: #bb86fc;
+    background-color: #ff0000;
     border: none;
     border-radius: 8px;
-    color: #121212;
+    color: #ffd13c;
     font-weight: bold;
     font-size: 16px;
     cursor: pointer;
@@ -85,137 +84,131 @@ header p {
 }
 
 .btn-primary:hover {
-    background-color: #a370f7; /* Darker purple on hover */
+    background-color: #e60000;
+    transform: translateY(-2px);
 }
 
-/* FOOTER LINKS */
 footer {
     margin-top: 25px;
     text-align: center;
 }
 
 .forgot-password {
-    color: #bb86fc;
+    color: #ff8c00;
     text-decoration: none;
     font-size: 13px;
     display: block;
     margin-bottom: 15px;
 }
 
-.signup-text {
+.signup-text, .login-text {
     font-size: 13px;
-    color: #757575;
+    color: #666;
 }
 
-.signup-text a {
-    color: #bb86fc;
+.signup-text a, .login-text a {
+    color: #ff0000;
     text-decoration: none;
     font-weight: bold;
 }
-.login-text{
-    font-size: 13px;
-    color: #757575;
-}
-.login-text a{
-    color: #bb86fc;
-    text-decoration: none;
-    font-weight: bold;
-}
-.signup-card{
-    background-color: #1e1e1e; /* Card background */
+
+.signup-card {
+    background-color: #ffffff;
     padding: 40px;
     border-radius: 12px;
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
     width: 100%;
     max-width: 400px;
+    border-top: 4px solid #ffcc00;
 }
-/* Toàn bộ CSS cơ bản đã có từ trước, thêm phần này vào bên dưới */
 
 .dashboard-container {
     display: flex;
     width: 100vw;
     height: 100vh;
-    background-color: #121212;
+    background-color: #ff0000;
 }
 
-/* SIDEBAR STYLES (20%) */
 .sidebar {
     width: 280px;
-    background-color: #1e1e1e;
-    border-right: 1px solid #333;
+    background-color: #ffffff;
+    border-right: 2px solid #ffcc00;
     display: flex;
     flex-direction: column;
     padding: 20px;
 }
 
 .logo {
-    color: #bb86fc;
-    font-size: 24px;
+    color: #ff0000;
+    font-size: 26px;
     margin-bottom: 30px;
     text-align: center;
+    font-weight: 900;
 }
 
-/* User Section (Code đã viết ở lượt trước) */
 .user-section {
     display: flex;
     align-items: center;
     padding: 15px;
-    background-color: #2c2c2c;
+    background-color: #fff8e1;
     border-radius: 12px;
     margin-bottom: 25px;
+    border: 1px solid #ffd700;
 }
 
 .user-avatar {
     width: 40px;
     height: 40px;
-    background-color: #bb86fc;
+    background-color: #ff0000;
     border-radius: 50%;
     display: flex;
     justify-content: center;
     align-items: center;
     margin-right: 12px;
-    color: #121212;
+    color: #ffd700;
     font-weight: bold;
+    border: 2px solid #ffd700;
 }
 
-/* Nav Links */
 .sidebar-nav ul { list-style: none; }
 .sidebar-nav li { margin-bottom: 5px; }
 .sidebar-nav a {
-    color: #757575;
+    color: #ff0000;
     text-decoration: none;
     padding: 12px 15px;
     display: block;
     border-radius: 8px;
     transition: 0.3s;
+    font-weight: 500;
 }
 
 .sidebar-nav li.active a, .sidebar-nav a:hover {
-    background-color: #2c2c2c;
-    color: #bb86fc;
+    background-color: #ff0000;
+    color: #ffffff;
 }
 
-.sidebar-nav i { margin-right: 10px; width: 20px; }
-.nav-divider { height: 1px; background: #333; margin: 15px 0; }
+.sidebar-nav i { margin-right: 10px; width: 20px; color: #ff8c00; }
+.nav-divider { height: 1px; background: #ffd700; margin: 15px 0; }
 
 .btn-logout {
     margin-top: auto;
     background: none;
-    border: 1px solid #cf6679;
-    color: #cf6679;
+    border: 1px solid #ff0000;
+    color: #ff0000;
     padding: 10px;
     border-radius: 8px;
     cursor: pointer;
     transition: 0.3s;
+    font-weight: bold;
 }
 
-.btn-logout:hover { background: #cf6679; color: #fff; }
+.btn-logout:hover { background: #ff0000; color: #fff; }
 
-/* MAIN CONTENT (80%) */
 .main-content {
     flex: 1;
     padding: 40px;
     overflow-y: auto;
+    background-color: #ff0000; /* Nền hồng nhạt trực quan cho vùng làm việc */
 }
 
 .content-header {
@@ -225,58 +218,80 @@ footer {
     margin-bottom: 30px;
 }
 
-.content-header h2 { font-size: 32px; color: #e1e1e1; }
-.content-header span { color: #757575; }
+.content-header h2 { font-size: 32px; color: #ffc400; text-shadow: 1px 1px 0px #ffd700; }
+.content-header span { color: #ffc400; font-weight: bold; }
 
-.task-input-card {
-    background-color: #1e1e1e;
-    padding: 15px;
+.task-input-container {
+    background-color: #ffffff;
+    padding: 20px;
     border-radius: 12px;
-    display: flex;
-    gap: 10px;
     margin-bottom: 30px;
+    border: 1px solid #ffd700;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.05);
 }
 
-.task-input-card input {
+.task-input-card {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 10px;
+}
+
+.task-input-card input, #taskDeadline {
     flex: 1;
-    background: #2c2c2c;
-    border: 1px solid #333;
+    background: #fffdf5;
+    border: 1px solid #ffcc00;
     padding: 12px;
     border-radius: 8px;
-    color: #fff;
+    color: #333;
     outline: none;
 }
 
+#taskNote {
+    width: 100%;
+    background: #fffdf5;
+    border: 1px solid #ffcc00;
+    border-radius: 8px;
+    color: #333;
+    padding: 12px;
+    resize: none;
+    height: 70px;
+    outline: none;
+    margin-top: 10px;
+}
+
 .btn-add {
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: #ff0000;
+    color: #ffffff;
     border: none;
     padding: 0 25px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-}
-
-/* TASK LIST STYLES */
-#taskList {
-    list-style: none;
-    margin-top: 20px;
+    box-shadow: 2px 2px 0px #ffd700;
 }
 
 .task-item {
-    background-color: #2c2c2c;
+    background-color: #ffffff;
     margin-bottom: 10px;
-    padding: 15px;
+    padding: 18px;
     border-radius: 8px;
     display: flex;
     justify-content: space-between;
     align-items: center;
     transition: 0.3s;
+    border-left: 6px solid #ffcc00;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.task-item.urgent {
+    border-left: 6px solid #ff0000;
+    background-color: #fff8f8;
 }
 
 .task-item.completed span {
     text-decoration: line-through;
-    color: #757575;
+    color: #999;
+    opacity: 0.6;
 }
 
 .task-left {
@@ -286,114 +301,58 @@ footer {
 }
 
 .task-left input[type="checkbox"] {
-    accent-color: #bb86fc;
+    accent-color: #ff0000;
     width: 18px;
     height: 18px;
     cursor: pointer;
-}
-
-.task-actions {
-    display: flex;
-    gap: 10px;
 }
 
 .task-actions button {
     background: none;
     border: none;
     cursor: pointer;
-    font-size: 16px;
+    font-size: 18px;
+    margin-left: 10px;
     transition: 0.2s;
 }
 
-.btn-edit { color: #bb86fc; }
-.btn-delete { color: #cf6679; }
+.btn-edit { color: #ff8c00; }
+.btn-delete { color: #ff0000; }
 
-.task-actions button:hover {
-    transform: scale(1.2);
-}
-
-/* Input Container */
-.task-input-container {
-    background-color: #1e1e1e;
-    padding: 15px;
-    border-radius: 12px;
-    margin-bottom: 30px;
-}
-
-.task-input-card {
-    display: flex;
-    gap: 10px;
-    margin-bottom: 10px;
-}
-
-#taskDeadline {
-    background: #2c2c2c;
-    border: 1px solid #333;
-    color: #fff;
-    padding: 8px;
-    border-radius: 8px;
-    outline: none;
-}
-
-#taskNote {
-    width: 100%;
-    background: #2c2c2c;
-    border: 1px solid #333;
-    border-radius: 8px;
-    color: #fff;
-    padding: 10px;
-    resize: none;
-    height: 60px;
-    outline: none;
-}
-
-/* See More Styles */
 .task-details {
-    display: none; /* Ẩn mặc định */
-    padding: 10px 40px;
-    background-color: #252525;
-    border-radius: 0 0 8px 8px;
-    margin-top: -5px;
-    margin-bottom: 10px;
-    font-size: 13px;
-    border-left: 2px solid #bb86fc;
+    display: none;
+    padding: 15px 45px;
+    background-color: #fffdf5;
+    border-radius: 0 0 10px 10px;
+    margin-top: -12px;
+    margin-bottom: 15px;
+    font-size: 14px;
+    border-left: 6px solid #ff0000;
+    border-bottom: 1px solid #ffd700;
 }
 
-.task-details p { margin: 5px 0; color: #b0b0b0; }
+.task-details p { margin: 5px 0; color: #ff4500; font-weight: 500; }
+
 .btn-see-more {
-    color: #757575;
+    color: #ff0000;
     font-size: 12px;
     cursor: pointer;
     text-decoration: underline;
     background: none;
     border: none;
     padding: 0;
-}
-
-/* Màu đỏ cảnh báo khi sát hạn (dưới 2 ngày) */
-.task-item.urgent {
-    border: 1px solid #cf6679; /* Màu Error Red trong bảng màu của bạn */
-    background-color: rgba(207, 102, 121, 0.1); /* Đỏ nhạt để làm nền */
-}
-
-/* Hiệu ứng khi hoàn thành thì mất màu đỏ */
-.task-item.completed.urgent {
-    border: 1px solid #333;
-    background-color: #2c2c2c;
-}
-
-.task-wrapper {
-    margin-bottom: 15px;
+    margin-left: 10px;
 }
 
 .settings-card {
-    background-color: #1e1e1e;
+    background-color: #ffffff;
     padding: 30px;
     border-radius: 12px;
     max-width: 500px;
+    border: 1px solid #ffd700;
 }
 
-.settings-card h3 { color: #bb86fc; margin-bottom: 20px; }
+.settings-card h3 { color: #ff0000; margin-bottom: 20px; }
 
 .input-group {
     margin-bottom: 15px;
@@ -402,129 +361,87 @@ footer {
 }
 
 .input-group label {
-    color: #757575;
+    color: #ff4500;
     margin-bottom: 5px;
     font-size: 14px;
-}
-
-.input-group input {
-    background: #2c2c2c;
-    border: 1px solid #333;
-    padding: 10px;
-    color: white;
-    border-radius: 8px;
+    font-weight: 600;
 }
 
 .btn-save {
-    background-color: #bb86fc;
-    color: #121212;
+    background-color: #ff0000;
+    color: #ffd700;
     border: none;
     padding: 12px 20px;
     border-radius: 8px;
     font-weight: bold;
     cursor: pointer;
-    margin-top: 10px;
 }
 
-/* Widget Quote ở góc phải dưới cùng */
-/* Widget Quote nổi ở góc phải - Phiên bản to hơn */
 .quote-box {
     position: fixed;
     bottom: 30px;
     right: 30px;
-    width: 400px; /* Tăng từ 320px lên 400px */
-    background: rgba(30, 30, 30, 0.85);
-    backdrop-filter: blur(12px);
-    border: 1px solid rgba(255, 255, 255, 0.1);
-    border-left: 5px solid #bb86fc; /* Thanh tím dày hơn */
-    padding: 25px; /* Tăng khoảng cách đệm */
+    width: 420px;
+    background: #ffffff;
+    border: 2px solid #ffcc00;
+    border-left: 10px solid #a70000;
+    padding: 25px;
     border-radius: 15px;
-    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
     z-index: 9999;
-    display: none; /* Sẽ được hiện bởi JS */
-    flex-direction: column;
-    transition: all 0.4s ease;
+    display: none;
 }
 
 .quote-content p {
-    color: #ffffff;
-    font-size: 16px; /* Chữ to hơn */
+    color: #ff0000;
+    font-size: 17px;
     line-height: 1.7;
     margin-bottom: 12px;
     font-style: italic;
-    font-weight: 300;
+    font-weight: 600;
 }
 
 .quote-content small {
-    color: #bb86fc;
-    font-size: 13px;
-    font-weight: 600;
+    color: #ff8c00;
+    font-size: 14px;
+    font-weight: 700;
     text-transform: uppercase;
-    letter-spacing: 1.2px;
-}
-
-@keyframes slideUp {
-    from { transform: translateY(100px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
 }
 
 .btn-close-quote {
     background: none;
     border: none;
-    color: #757575;
+    color: #ff0000;
     cursor: pointer;
     font-size: 18px;
-    padding-left: 10px;
-    line-height: 1;
+    font-weight: bold;
 }
 
-.btn-close-quote:hover {
-    color: #cf6679;
-}
-
-/* Container bao quanh checkbox và text */
 .widget-settings .checkbox-label {
     display: flex;
     align-items: center;
     cursor: pointer;
     font-size: 16px;
-    color: #e1e1e1;
-    margin-top: 20px; /* Tạo khoảng cách với tiêu đề Widgets */
-    margin-bottom: 25px; /* Tạo khoảng cách với nút Save Changes */
-    transition: all 0.2s ease;
+    color: #ff0000;
+    margin-top: 20px;
 }
 
-/* Ẩn checkbox mặc định của trình duyệt */
-.widget-settings .checkbox-label input {
-    display: none;
-}
-
-/* Tạo ô vuông custom mới */
 .widget-settings .checkmark {
-    height: 24px; /* Rộng và to hơn */
+    height: 24px;
     width: 24px;
-    background-color: #2c2c2c;
-    border: 2px solid #555; /* Viền đậm hơn cho sắc nét */
+    background-color: #ffffff;
+    border: 2px solid #ffd700;
     border-radius: 6px;
-    margin-right: 15px; /* Khoảng cách giữa ô vuông và chữ "Enable..." */
+    margin-right: 15px;
     position: relative;
     display: inline-block;
-    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* Hiệu ứng khi hover */
-.widget-settings .checkbox-label:hover .checkmark {
-    border-color: #bb86fc;
-    box-shadow: 0 0 8px rgba(187, 134, 252, 0.3);
-}
-
-/* Khi đã tích chọn (Checked) */
 .widget-settings .checkbox-label input:checked ~ .checkmark {
-    background-color: #bb86fc;
-    border-color: #bb86fc;
+    background-color: #ff0000;
+    border-color: #ff0000;
 }
 
-/* Tạo dấu tích (Checkmark) */
 .widget-settings .checkmark:after {
     content: "";
     position: absolute;
@@ -533,12 +450,11 @@ footer {
     top: 4px;
     width: 5px;
     height: 10px;
-    border: solid #121212; /* Màu dấu tích đen trên nền tím */
+    border: solid #ffd700;
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
 
-/* Hiện dấu tích khi checked */
 .widget-settings .checkbox-label input:checked ~ .checkmark:after {
     display: block;
 }
