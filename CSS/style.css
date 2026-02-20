@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
-
 :root {
     --red-deep:       #9b1515;   /* Lacquer red */
     --red-mid:        #c0392b;   /* Classic red */
@@ -163,7 +162,6 @@ header p {
 .input-field input::placeholder {
     color: #b09070;
 }
-
 .btn-primary {
     width: 100%;
     padding: 14px;
@@ -275,7 +273,6 @@ footer {
     text-shadow: 1px 1px 0 var(--gold-light);
     letter-spacing: 1px;
 }
-
 .user-section {
     display: flex;
     align-items: center;
@@ -303,7 +300,6 @@ footer {
     box-shadow: 0 2px 8px var(--shadow-red);
     flex-shrink: 0;
 }
-
 .sidebar-nav ul { list-style: none; }
 
 .sidebar-nav li { margin-bottom: 4px; }
@@ -381,7 +377,6 @@ footer {
     background: var(--gold-imperial);
     border-radius: 3px;
 }
-
 .content-header {
     display: flex;
     justify-content: space-between;
@@ -403,7 +398,6 @@ footer {
     font-size: 14px;
     opacity: 0.85;
 }
-
 .task-input-container {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     padding: 22px;
@@ -494,7 +488,6 @@ footer {
     transform: translateY(-2px);
     box-shadow: 2px 5px 0px var(--gold-imperial);
 }
-
 .task-item {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     margin-bottom: 10px;
@@ -536,7 +529,6 @@ footer {
     height: 18px;
     cursor: pointer;
 }
-
 .task-actions button {
     background: none;
     border: none;
@@ -589,7 +581,6 @@ footer {
 .btn-see-more:hover {
     color: var(--gold-imperial);
 }
-
 .settings-card {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     padding: 34px;
@@ -657,7 +648,6 @@ footer {
     background-color: #fff;
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
 }
-
 .widget-settings {
     display: flex;
     flex-direction: column;
