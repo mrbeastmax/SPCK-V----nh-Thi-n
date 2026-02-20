@@ -1,14 +1,5 @@
-/* ============================================
-   TẾT NGUYÊN ĐÁN THEME
-   Palette: Lacquer Red · Imperial Gold · Lantern Glow · Peach Blossom
-   Font: Playfair Display (headings) · Be Vietnam Pro (body)
-   ============================================ */
-
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=Be+Vietnam+Pro:wght@400;500;600;700&display=swap');
 
-/* ============================================
-   CSS VARIABLES
-   ============================================ */
 :root {
     --red-deep:       #9b1515;   /* Lacquer red */
     --red-mid:        #c0392b;   /* Classic red */
@@ -31,9 +22,6 @@
     --transition:     all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-/* ============================================
-   RESET & BASE
-   ============================================ */
 * {
     margin: 0;
     padding: 0;
@@ -60,9 +48,6 @@ body {
     color: var(--ink);
 }
 
-/* ============================================
-   LOGIN CARD
-   ============================================ */
 .login-card {
     background-color: var(--paper);
     padding: 44px 40px;
@@ -79,7 +64,6 @@ body {
     overflow: hidden;
 }
 
-/* Decorative corner ornament */
 .login-card::before,
 .login-card::after {
     content: '✦';
@@ -92,9 +76,6 @@ body {
 .login-card::before { top: 12px; left: 16px; }
 .login-card::after  { bottom: 12px; right: 16px; }
 
-/* ============================================
-   SIGNUP CARD
-   ============================================ */
 .signup-card {
     background-color: var(--paper);
     padding: 44px 40px;
@@ -123,9 +104,6 @@ body {
 .signup-card::before { top: 12px; right: 16px; }
 .signup-card::after  { bottom: 12px; left: 16px; }
 
-/* ============================================
-   HEADER
-   ============================================ */
 header {
     text-align: center;
     margin-bottom: 32px;
@@ -149,9 +127,6 @@ header p {
     text-transform: uppercase;
 }
 
-/* ============================================
-   INPUT FIELDS
-   ============================================ */
 .input-field {
     margin-bottom: 20px;
 }
@@ -189,9 +164,6 @@ header p {
     color: #b09070;
 }
 
-/* ============================================
-   PRIMARY BUTTON
-   ============================================ */
 .btn-primary {
     width: 100%;
     padding: 14px;
@@ -219,9 +191,6 @@ header p {
     transform: translateY(0);
 }
 
-/* ============================================
-   FOOTER LINKS
-   ============================================ */
 footer {
     margin-top: 28px;
     text-align: center;
@@ -260,9 +229,6 @@ footer {
     color: var(--gold-imperial);
 }
 
-/* ============================================
-   DASHBOARD LAYOUT
-   ============================================ */
 .dashboard-container {
     display: flex;
     width: 100vw;
@@ -273,9 +239,6 @@ footer {
         radial-gradient(ellipse at 90% 10%, rgba(244, 162, 97, 0.08) 0%, transparent 50%);
 }
 
-/* ============================================
-   SIDEBAR
-   ============================================ */
 .sidebar {
     width: 280px;
     background: linear-gradient(180deg, var(--paper) 0%, #f5ead5 100%);
@@ -288,7 +251,6 @@ footer {
     overflow: hidden;
 }
 
-/* Subtle pattern on sidebar */
 .sidebar::before {
     content: '';
     position: absolute;
@@ -314,9 +276,6 @@ footer {
     letter-spacing: 1px;
 }
 
-/* ============================================
-   USER SECTION
-   ============================================ */
 .user-section {
     display: flex;
     align-items: center;
@@ -345,9 +304,6 @@ footer {
     flex-shrink: 0;
 }
 
-/* ============================================
-   SIDEBAR NAV
-   ============================================ */
 .sidebar-nav ul { list-style: none; }
 
 .sidebar-nav li { margin-bottom: 4px; }
@@ -391,9 +347,6 @@ footer {
     opacity: 0.6;
 }
 
-/* ============================================
-   LOGOUT BUTTON
-   ============================================ */
 .btn-logout {
     margin-top: auto;
     background: none;
@@ -415,9 +368,6 @@ footer {
     box-shadow: 0 4px 12px var(--shadow-red);
 }
 
-/* ============================================
-   MAIN CONTENT
-   ============================================ */
 .main-content {
     flex: 1;
     padding: 40px;
@@ -425,7 +375,6 @@ footer {
     background-color: transparent;
 }
 
-/* Scrollbar styling */
 .main-content::-webkit-scrollbar { width: 6px; }
 .main-content::-webkit-scrollbar-track { background: transparent; }
 .main-content::-webkit-scrollbar-thumb {
@@ -433,9 +382,6 @@ footer {
     border-radius: 3px;
 }
 
-/* ============================================
-   CONTENT HEADER
-   ============================================ */
 .content-header {
     display: flex;
     justify-content: space-between;
@@ -458,9 +404,6 @@ footer {
     opacity: 0.85;
 }
 
-/* ============================================
-   TASK INPUT CONTAINER
-   ============================================ */
 .task-input-container {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     padding: 22px;
@@ -531,9 +474,6 @@ footer {
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
 }
 
-/* ============================================
-   ADD BUTTON
-   ============================================ */
 .btn-add {
     background: linear-gradient(135deg, var(--red-deep), var(--red-mid));
     color: var(--gold-light);
@@ -555,9 +495,6 @@ footer {
     box-shadow: 2px 5px 0px var(--gold-imperial);
 }
 
-/* ============================================
-   TASK ITEMS
-   ============================================ */
 .task-item {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     margin-bottom: 10px;
@@ -600,9 +537,6 @@ footer {
     cursor: pointer;
 }
 
-/* ============================================
-   TASK ACTION BUTTONS
-   ============================================ */
 .task-actions button {
     background: none;
     border: none;
@@ -621,9 +555,6 @@ footer {
 .btn-edit   { color: var(--peach); }
 .btn-delete { color: var(--red-mid); }
 
-/* ============================================
-   TASK DETAILS
-   ============================================ */
 .task-details {
     display: none;
     padding: 14px 45px;
@@ -659,9 +590,6 @@ footer {
     color: var(--gold-imperial);
 }
 
-/* ============================================
-   SETTINGS CARD
-   ============================================ */
 .settings-card {
     background: linear-gradient(135deg, var(--paper) 0%, #fef9ee 100%);
     padding: 34px;
@@ -688,7 +616,6 @@ footer {
     margin-bottom: 26px;
     text-shadow: 1px 1px 0 var(--gold-light);
 }
-
 .settings-card h3 {
     font-family: var(--font-display);
     color: var(--red-deep);
@@ -698,10 +625,6 @@ footer {
     padding-bottom: 8px;
     border-bottom: 1px solid var(--gold-imperial);
 }
-
-/* ============================================
-   INPUT GROUPS (SETTINGS)
-   ============================================ */
 .input-group {
     margin-bottom: 20px;
 }
@@ -735,9 +658,6 @@ footer {
     box-shadow: 0 0 0 3px rgba(192, 57, 43, 0.12);
 }
 
-/* ============================================
-   WIDGET SETTINGS — CHECKBOX (CLEAN, NO DUPLICATES)
-   ============================================ */
 .widget-settings {
     display: flex;
     flex-direction: column;
@@ -761,7 +681,6 @@ footer {
     color: var(--red-mid);
 }
 
-/* Hide native checkbox */
 .widget-settings .checkbox-label input[type="checkbox"] {
     position: absolute;
     opacity: 0;
@@ -769,7 +688,6 @@ footer {
     height: 0;
 }
 
-/* Custom box */
 .widget-settings .checkmark {
     flex-shrink: 0;
     width: 22px;
@@ -781,20 +699,16 @@ footer {
     transition: var(--transition);
 }
 
-/* Hover */
 .widget-settings .checkbox-label:hover .checkmark {
     background-color: #fef3c0;
     border-color: var(--red-mid);
 }
-
-/* Checked */
 .widget-settings .checkbox-label input:checked ~ .checkmark {
     background: linear-gradient(135deg, var(--red-deep), var(--red-mid));
     border-color: var(--red-deep);
     box-shadow: 0 2px 8px var(--shadow-red);
 }
 
-/* Tick mark */
 .widget-settings .checkmark::after {
     content: "";
     position: absolute;
