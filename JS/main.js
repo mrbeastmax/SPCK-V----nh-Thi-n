@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     const fetchQuote = async () => {
         try {
-            const tags = ['motivation', 'wisdom', 'inspirational'];
+            const tags = ['motivation', 'inspirational'];
             const randomTag = tags[Math.floor(Math.random() * tags.length)];
 
             const res = await fetch(`https://quoteslate.vercel.app/api/quotes/random?tags=${randomTag}`);
