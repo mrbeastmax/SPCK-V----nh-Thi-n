@@ -1,30 +1,59 @@
-// Function to handle Sign Up
+const hashPassword = (password) => {
+    let hash = 0;
+    for (let i = 0; i < password.length; i++) {
+        const char = password.charCodeAt(i);
+        hash = (hash << 5) - hash + char;
+        hash |= 0;
+    }
+    return hash.toString();
+};
+
+const isValidEmail = (email) => {
+    const hasAt = email.includes('@');
+    const hasDot = email.includes('.');
+    const atIndex = email.indexOf('@');
+    const lastDotIndex = email.lastIndexOf('.');
+
+    return hasAt && hasDot && atIndex > 0 && lastDotIndex > atIndex + 1;
+};
+
 const handleSignup = (event) => {
     event.preventDefault();
 
-    const username = document.getElementById('username').value;
-    const email = document.getElementById('email').value;
+    const username = document.getElementById('username').value.trim();
+    const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
     const confirmPassword = document.getElementById('confirm-password').value;
 
-    // 1. Check if passwords match
+    if (!username || !email || !password || !confirmPassword) {
+        alert("Please fill in all fields!");
+        return;
+    }
+
+    if (!isValidEmail(email)) {
+        alert("Please enter a valid email address!");
+        return;
+    }
+
+    if (password.length < 6) {
+        alert("Password must be at least 6 characters!");
+        return;
+    }
+
     if (password !== confirmPassword) {
         alert("Passwords do not match!");
         return;
     }
 
-    // 2. Get existing users from LocalStorage or create empty array
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // 3. Check if email already exists
     const userExists = users.some(user => user.email === email);
     if (userExists) {
         alert("Email is already registered!");
         return;
     }
 
-    // 4. Save new user
-    const newUser = { username, email, password };
+    const newUser = { username, email, password: hashPassword(password) };
     users.push(newUser);
     localStorage.setItem('users', JSON.stringify(users));
 
@@ -32,39 +61,36 @@ const handleSignup = (event) => {
     window.location.href = 'login.html';
 };
 
-// Function to handle Login
 const handleLogin = (event) => {
     event.preventDefault();
 
-    const email = document.getElementById('email').value;
+    const email = document.getElementById('email').value.trim();
     const password = document.getElementById('password').value;
 
-    // 1. Get users from LocalStorage
+    if (!email || !password) {
+        alert("Please fill in all fields!");
+        return;
+    }
+
     const users = JSON.parse(localStorage.getItem('users')) || [];
 
-    // 2. Find user with matching email and password
-    const foundUser = users.find(user => user.email === email && user.password === password);
+    const foundUser = users.find(
+        user => user.email === email && user.password === hashPassword(password)
+    );
 
     if (foundUser) {
         alert(`Welcome back, ${foundUser.username}!`);
-        // Save logged in state if needed
         localStorage.setItem('currentUser', JSON.stringify(foundUser));
-        window.location.href = 'home.html'; // Redirect to your To-Do list
+        window.location.href = 'home.html';
     } else {
         alert("Invalid email or password!");
     }
 };
 
-// Logic to detect which form is being used
 document.addEventListener('DOMContentLoaded', () => {
     const signupForm = document.getElementById('signupForm');
     const loginForm = document.getElementById('loginForm');
 
-    if (signupForm) {
-        signupForm.addEventListener('submit', handleSignup);
-    }
-
-    if (loginForm) {
-        loginForm.addEventListener('submit', handleLogin);
-    }
+    if (signupForm) signupForm.addEventListener('submit', handleSignup);
+    if (loginForm) loginForm.addEventListener('submit', handleLogin);
 });
